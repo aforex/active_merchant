@@ -5,13 +5,14 @@ module ActiveMerchant #:nodoc:
         class Helper < ActiveMerchant::Billing::Integrations::Helper
 
           mapping :access_token, 'access_token'
-          # mapping :amount, 'amount'
-          # mapping :currency, 'currency'
-          # mapping :transaction_id, 'transaction_id'
-          # mapping :language, 'language'
-          # mapping :detail1_description, 'detail1_description'
-          # mapping :detail1_text, 'detail1_text'
-          # mapping :status_url, 'status_url'
+          mapping :merchant_ref_id, 'merchant_ref_id'
+          mapping :total_amount, 'total_amount'
+          mapping :currency, 'currency'
+          mapping :lang, 'lang'
+          mapping :amount, 'amount'
+          mapping :quantity, 'quantity'
+          mapping :name, 'name'
+          mapping :description, 'description'
 
         end
       end
